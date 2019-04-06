@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    color: rgba(250, 250, 250, 1);
+    font-family: system-ui;
+    background-color: #000000;
+}
+
+
+/* MAIN */
+
+#main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    animation: fadein 2s;
+}
+
+
+.static {
+    height: 348.362pt;
+    width: 100%;
+    margin-top: 32pt;
+    border: 0px 0px 0px 0px;
+    margin-bottom: 100pt;
+}
+
+.static-image {
+    height: auto;
+    width: 100%;
+    z-index: -1000;
+}
+
+
+.static-content {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 41px;
+    font-weight: 800;
+    color: rgba(250, 250, 250, 1);
+    margin-bottom: 16pt;
+    /*    text-transform: uppercase;*/
+}
+
+
+.static-content p {
+    width: 50%;
+    margin-bottom: 20pt;
+    font-size: 12pt;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+.download-button {
+    height: 42px;
+    width: 160px;
+    background-color: transparent;
+    border: 2px solid rgb(0, 122, 255);
+    font-size: 13px;
+    font-weight: 300;
+    transition: background-color 250ms;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    z-index: 1001;
+    /* border-bottom: 8px solid white; this gives it a little shadow at the bottom, but isnt necessary*/
+}
+
+
+.download-button:hover {
+    background-color: rgb(0, 122, 255);
+    border: 0px solid rgb(0, 122, 255);
+    color: white;
+    cursor: pointer;
+}
+
+.banner {
+    height: 348.362pt;
+    margin-bottom: 150pt;
+    transition: 0.3s ease all !important;
+    clip: 10px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {
+    width: 30%;
+    height: 348.362pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    right: 5%;
+    transform: translate(0%, 0%);
+}
+
+.banner-content h1 {
+    font-size: 32pt;
+    font-weight: 700;
+    padding-bottom: 13pt;
+}
+
+.banner-content p {
+    font-size: 10pt;
+    font-weight: 300;
+    text-align: center;
+    width: 82%;
+    margin-bottom: 16pt;
+}
+
+.test {
+    width: 100%;
+    height: 100%;
+}
+
+.test img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* FOOTER */
+
+
+#footer {
+    height: 40px;
+    color: rgba(250, 250, 250, .75);
+    width: 100%;
+    margin-top: 20px;
+    animation: fadein 2s;
+
+}
+
+#footer p {
+    font-size: 9pt;
+    font-weight: 400;
+    margin-left: 5%;
+}
+
+
+/* ANIMATION */
+
+@keyframes 
+fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 736px)
+and (orientation: portrait) {
+
+    #main {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+
+}
+
+@media only screen 
+and (device-width: 414px) 
+and (device-height: 896px) 
+and (-webkit-device-pixel-ratio: 2) {
+
+    #main {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@media only screen 
+and (device-width: 375px) 
+and (device-height: 812px)
+and (-webkit-device-pixel-ratio: 3) {
+
+    #main {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+
+}
+
+@media only screen 
+and (device-width: 414px)
+and (device-height: 896px) 
+and (-webkit-device-pixel-ratio: 3) {
+
+    #main {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+}
