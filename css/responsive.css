@@ -454,6 +454,54 @@
 }
 
 
+
+/* Features Text Wrapper*/
+
+@media (max-width: 1043px) {
+    #features .section-header {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    #features .section-header h1 {
+        line-height: 48pt;
+    }
+}
+
+@media (max-width: 854px) {
+    #features .section-header {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    #features .section-header h1 {
+        line-height: 48pt;
+    }
+}
+
+@media (max-width: 640px) {
+    #features .section-header {
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    #features .section-header h1 {
+        line-height: 48pt;
+    }
+}
+
+@media (max-width: 430px) {
+    #features .section-header {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    #features .section-header h1 {
+        line-height: 48pt;
+    }
+}
+
+
 @media only screen and (max-width: 767px) {
     
     #whyAlmanac .image-container {
@@ -533,10 +581,8 @@
         margin-top: 30px;
         margin-right: 4px;
         text-transform: uppercase;
-        width: 125px;
-        height: 45px;
         padding: 15px 14px;
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .hero-area .contents .btn-border {

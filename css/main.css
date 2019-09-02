@@ -206,7 +206,7 @@ a:not([href]):not([tabindex]):hover {
 
 .btn-signin {
     background: transparent;
-    border: 2px solid rgb(10,132,255);
+    border: 2px solid rgb(10, 132, 255);
     color: #fff;
     padding: 8px 20px;
     margin-left: 30px;
@@ -214,7 +214,7 @@ a:not([href]):not([tabindex]):hover {
 }
 
 .btn-signin:hover {
-    background: rgb(10,132,255); 
+    background: rgb(10, 132, 255);
     color: #fff;
     box-shadow: 0px 0px 0px 0px rgba(96, 94, 94, 0.17);
 }
@@ -425,7 +425,8 @@ button:focus {
     z-index: 9999;
     padding: 13pt;
     -webkit-transition: all 0.5s ease-in-out;
-    transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);;
+    transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    ;
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
@@ -571,7 +572,7 @@ button:focus {
 }
 
 .hero-area .contents p {
-    color: rgb(220,220,220);
+    color: rgb(220, 220, 220);
     font-size: 13pt;
     line-height: 21pt;
 }
@@ -602,12 +603,30 @@ button:focus {
 }
 
 
+.hero-button {
+    cursor: pointer;
+    border: 1px solid #fff;
+    color: #fff;
+    box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
+    width: 180px;
+    height: 50px;
+    padding: 15px 15px;
+}
+
+.hero-button:hover {
+    color: #fff;
+    border: 1px solid rgb(90, 200, 250);
+    background-color: rgb(90, 200, 250);
+    transform: translateY(-2px);
+}
+
+
 /* ==========================================================================
    About Section 
    ========================================================================== */
 
 #about {
-    background-color: rgb(250,250,250);
+    background-color: rgb(250, 250, 250);
     padding: 32pt 0pt 72pt 0pt;
 }
 
@@ -658,18 +677,18 @@ button:focus {
     font-size: 52pt;
     font-weight: 700;
     padding-bottom: 10pt;
-    color: rgb(250,250,250);
+    color: rgb(250, 250, 250);
     line-height: 52pt;
 }
 
 #whyAlmanac .desc-text p {
     font-size: 13pt;
-    color: rgb(200,200,200);
+    color: rgb(200, 200, 200);
 }
 
 
 #whyAlmanac .image-container {
-    background-color: rgba(20,20,20,0);
+    background-color: rgba(20, 20, 20, 0);
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -704,7 +723,7 @@ button:focus {
     border: 1px solid rgba(0, 122, 255, .50);
     box-shadow: 0px 0px 25px 0px rgba(95, 95, 95, 0.24);
     transform: scale(1.1, 1.1);
-  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     -moz-transition: all .4s ease;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
@@ -742,7 +761,7 @@ button:focus {
 #services .services-item p {
     font-size: 16px;
     font-weight: 300,
-    margin-bottom: 10px;
+        margin-bottom: 10px;
     color: #131313;
 }
 
@@ -757,7 +776,7 @@ button:focus {
 
 #features {
     padding: 32pt 0pt 72pt 0pt;
-    background-color: rgb(250,250,250);
+    background-color: rgb(250, 250, 250);
 }
 
 #features .container {
@@ -770,7 +789,7 @@ button:focus {
     margin: 32pt 0pt 0pt 0pt;
     font-size: 16pt;
     font-weight: 300;
-    color: rgb(130,130,130);
+    color: rgb(130, 130, 130);
 }
 
 #features .featured-bg {
@@ -865,13 +884,23 @@ button:focus {
     padding-bottom: 20pt;
 }
 
+#features .desc-text {
+    width: 100%;
+    margin: 20pt auto;
+}
+
+#features .desc-text p {
+    font-size: 13pt;
+    line-height: 20pt;
+}
+
 
 
 /* ==========================================================================
    Showcase 
    ========================================================================== */
 #showcase {
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
     min-height: 82vh;
     padding: 32pt 0pt 72pt 0pt;
 }
@@ -900,7 +929,7 @@ button:focus {
 #showcase .showcase-slider .owl-controls.clickable .owl-page:hover span {
     filter: Alpha(Opacity=100);
     opacity: 1;
-    background: rgb(90,200,250);
+    background: rgb(90, 200, 250);
 }
 
 
@@ -914,7 +943,7 @@ button:focus {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    background: rgb(90,200,250);
+    background: rgb(90, 200, 250);
 }
 
 #showcase .showcase-slider .owl-controls .active span {
@@ -964,7 +993,7 @@ button:focus {
 }
 
 #showcase .showcase-slider .screenshot-thumb > .hover-content {
-    background-color: rgba(30,30,30,1);
+    background-color: rgba(30, 30, 30, 1);
     height: 85%;
     left: 0;
     opacity: 0;
@@ -994,23 +1023,58 @@ button:focus {
     text-align: center;
 }
 
+/* ==========================================================================
+   Testimonial 
+   ========================================================================== */
+
+#testimonial {
+    margin-bottom: 0pt;
+}
+
+#testimonial .testimony-quote {
+    height: 100%;
+    text-align: center;
+    margin: 50pt auto;
+}
+
+#testimonial .testimony-quote p {
+    font-size: 32pt;
+    line-height: 42pt;
+    font-weight: 300;
+    margin: 20pt 0pt;
+}
+
+
+#testimonial .testimony-quote h1 {
+    font-size: 13pt;
+    font-weight: 400;
+    color: rgb(30,30,30);
+}
+
+#testimonial .testimony-quote img {
+    height: auto;
+    margin: 20pt auto;
+    width: 200px;
+
+}
+
 
 
 /* ==========================================================================
    Our Pricing 
    ========================================================================== */
 #pricing {
-    background-color: rgb(250,250,250);
+    background-color: rgb(250, 250, 250);
     padding: 32pt 0pt 72pt 0pt;
     min-height: 80vh;
 }
 
-#pricing .pricing-text h2{
+#pricing .pricing-text h2 {
     font-size: 52pt;
     font-weight: 700;
     color: #232323;
     line-height: 52pt;
-    
+
 }
 
 #pricing .pricing-table {
@@ -1023,7 +1087,7 @@ button:focus {
 
 #pricing .pricing-table h3 {
     font-size: 16pt;
-    color: rgb(50,50,50);
+    color: rgb(50, 50, 50);
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 7pt;
@@ -1051,7 +1115,7 @@ button:focus {
 #pricing .pricing-table ul li {
     font-size: 11pt;
     font-weight: 400;
-    color: rgb(100,100,100);
+    color: rgb(100, 100, 100);
     display: block;
     line-height: 24pt;
 }
@@ -1103,17 +1167,17 @@ button:focus {
     font-size: 52pt;
     line-height: 52pt;
     font-weight: 700;
-    color: rgb(250,250,250);
+    color: rgb(250, 250, 250);
 }
 
 #contact .contact-text p {
     font-size: 20px;
     font-weight: 400;
-    color: rgb(250,250,250);
+    color: rgb(250, 250, 250);
     padding-bottom: 20pt;
 }
 
-#contact .sales-btn-container{
+#contact .sales-btn-container {
     margin-top: 32pt;
     background-color: red;
 }
@@ -1126,9 +1190,9 @@ button:focus {
     margin: 20pt auto;
     text-transform: uppercase;
     border-radius: 10pt;
-    background: rgba(250,250,250,.1);
+    background: rgba(250, 250, 250, .1);
     /*border: 2px solid rgba(48,209,88,1);*/
-    border: 1px solid rgb(200,200,200);
+    border: 1px solid rgb(200, 200, 200);
     padding: 20pt 0pt;
     display: flex;
     flex: 1;
@@ -1146,8 +1210,8 @@ button:focus {
 }
 
 #contact .sales-btn:hover {
-    background: rgb(90,200,250);
-    border: 1px solid rgb(60,170,220);
+    background: rgb(90, 200, 250);
+    border: 1px solid rgb(60, 170, 220);
     box-shadow: 0px 0px 25px 0px rgba(95, 95, 95, 0.24);
     transform: scale(1.1, 1.1) !important;
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -1279,7 +1343,7 @@ button:focus {
     font-weight: 700;
     margin-bottom: 13px;
     padding-bottom: 5px;
-    border-bottom: 1px solid rgba(50,50,50,.75);
+    border-bottom: 1px solid rgba(50, 50, 50, .75);
 }
 
 #footer-Content ul.menu li a {
@@ -1312,7 +1376,7 @@ button:focus {
     display: none;
 }
 
-#footer-Content ul.menu li img{
+#footer-Content ul.menu li img {
     height: 24px;
     width: 24px;
 }
@@ -1377,6 +1441,9 @@ button:focus {
 /* ==========================================================================
    Testimonial section
    ========================================================================== */
+
+/* 
+
 #testimonial {
     margin-bottom: 270px;
     background: url(../img/bg/testimonial-bg.jpg) no-repeat center center;
@@ -1495,7 +1562,7 @@ button:focus {
     display: block;
     width: 32px;
     height: 44px;
-    /* background: #fa183d; */
+     background: #fa183d; 
     border-radius: 50%;
     padding: 18px 20px 18px 28px;
 }
@@ -1567,6 +1634,8 @@ button:focus {
         opacity: 0;
     }
 }
+
+*/
 
 
 
