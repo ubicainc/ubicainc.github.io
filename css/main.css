@@ -1028,7 +1028,10 @@ button:focus {
    ========================================================================== */
 
 #testimonial {
+    min-height: 50vh;
     margin-bottom: 0pt;
+    display: flex;
+    align-items: center;
 }
 
 #testimonial .testimony-quote {

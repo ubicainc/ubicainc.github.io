@@ -51,19 +51,19 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1280px) {
-    
-    
+
+
     #whyAlmanac .image-container {
         margin: 0 auto;
         text-align: center;
     }
-    
+
     #whyAlmanac .section-title {
         padding-bottom: 0pt;
     }
-    
-    
-    
+
+
+
     .navbar-expand-md .navbar-nav .nav-link {
         font-size: 15px;
         padding: 8px 0px;
@@ -169,21 +169,21 @@
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    
-    
+
+
     .section {
         padding: 0pt 0pt;
     }
-    
+
     #whyAlmanac .image-container {
         margin: 0 auto;
         text-align: center;
     }
-    
+
     #whyAlmanac .section-title {
         padding-bottom: 0pt;
     }
-    
+
     .hero-area .contents h2 {
         font-size: 52pt;
     }
@@ -287,7 +287,7 @@
         margin-bottom: 20px;
         margin-top: 20px;
     }
-    }
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
     .hero-area .contents h2 {
@@ -337,7 +337,7 @@
     }
 
     #footer-Content .copyright p {
-        color: rgb(200,200,200);
+        color: rgb(200, 200, 200);
         font-size: 13pt;
     }
 
@@ -393,62 +393,84 @@
 
 
 @media (max-width: 580px) {
+
+    #about .business-item-info h3 {
+        font-size: 32pt;
+        font-weight: 700;
+        line-height: 32pt;
+    }
+
+
     #whyAlmanac .image-container {
-        background-color: rgba(30,30,30,.1);
+        background-color: rgba(30, 30, 30, .1);
         padding: 20pt;
     }
-    
+
     #whyAlmanac .section-title {
         font-size: 28pt;
         line-height: 28pt;
     }
-    
+
     #whyAlmanac .desc-text p {
         font-size: 12pt;
         line-height: 18pt;
     }
-    
+
     #footer-Content .footer-logo {
         margin: 20pt 0pt;
     }
-    
+
     #footer-Content .widget {
         margin: 20pt 0pt;
     }
-    
+
 }
 
 @media (max-width: 768px) {
     #contact .sales-btn {
-    font-weight: 700;
-    width: 200pt;
-    margin: 20pt auto;
-    text-transform: uppercase;
-    border-radius: 3pt;
-    background: rgba(250,250,250,1);
-    /*border: 2px solid rgba(48,209,88,1);*/
-    border: 1px solid rgb(200,200,200);
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
+        font-weight: 700;
+        width: 200pt;
+        margin: 20pt auto;
+        text-transform: uppercase;
+        border-radius: 3pt;
+        background: rgba(250, 250, 250, 1);
+        /*border: 2px solid rgba(48,209,88,1);*/
+        border: 1px solid rgb(200, 200, 200);
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
 
-#contact .sales-btn p {
-    color: rgb(30,30,30);
-    padding: 0pt;
-    font-size: 13pt;
-    font-weight: 600;
-    letter-spacing: 1.6pt;
-}
+    #contact .sales-btn p {
+        color: rgb(30, 30, 30);
+        padding: 0pt;
+        font-size: 13pt;
+        font-weight: 600;
+        letter-spacing: 1.6pt;
+    }
+
+    #whyAlmanac .section-title {
+        font-size: 32pt;
+        font-weight: 700;
+        padding-bottom: 10pt;
+        color: rgb(250, 250, 250);
+        line-height: 32pt;
+    }
+
+    #whyAlmanac .desc-text p {
+        font-size: 13pt;
+        color: rgb(200, 200, 200);
+    }
+
 }
 
 
 @media (max-width: 430px) {
     #features .features-text-wrapper {
         align-items: center;
-        width: 30%; 
+        width: 30%;
         margin: 0pt auto;
     }
 }
@@ -462,7 +484,7 @@
         width: 80%;
         margin: 0 auto;
     }
-    
+
     #features .section-header h1 {
         line-height: 48pt;
     }
@@ -473,7 +495,7 @@
         width: 60%;
         margin: 0 auto;
     }
-    
+
     #features .section-header h1 {
         line-height: 48pt;
     }
@@ -484,7 +506,7 @@
         width: 40%;
         margin: 0 auto;
     }
-    
+
     #features .section-header h1 {
         line-height: 48pt;
     }
@@ -495,7 +517,7 @@
         width: 100%;
         margin: 0 auto;
     }
-    
+
     #features .section-header h1 {
         line-height: 48pt;
     }
@@ -503,16 +525,16 @@
 
 
 @media only screen and (max-width: 767px) {
-    
+
     #whyAlmanac .image-container {
         margin: 0 auto;
         text-align: center;
     }
-    
+
     #whyAlmanac .section-title {
         padding-bottom: 0pt;
     }
-    
+
     .bg-inverse {
         background: #191c1e;
     }
@@ -574,7 +596,7 @@
     .hero-area .contents p {
         font-size: 13pt;
         line-height: 18pt;
-        color: rgb(220,220,220);
+        color: rgb(220, 220, 220);
     }
 
     .hero-area .contents .btn {
@@ -607,9 +629,8 @@
         padding: 30px 15px;
         margin-bottom: 15px;
     }
-    
-    .business-item-info img {
-    }
+
+    .business-item-info img {}
 
     #business-plane .business-item-info h3 {
         font-size: 25px;
@@ -627,7 +648,7 @@
         font-size: 14px;
         margin-bottom: 20px;
     }
-    
+
     .section-header .desc-text {
         width: 100%;
     }
@@ -637,22 +658,22 @@
         line-height: 26pt;
         margin-bottom: 0;
     }
-    
+
     #whyAlmanac .image-container {
-        background-color: rgba(30,30,30,.1);
+        background-color: rgba(30, 30, 30, .1);
         padding: 20pt;
     }
-    
+
     #whyAlmanac .section-title {
         font-size: 28pt;
         line-height: 28pt;
     }
-    
+
     #whyAlmanac .desc-text p {
         font-size: 12pt;
         line-height: 18pt;
     }
-    
+
 
     #features .feature-item {
         padding: 10px;
@@ -666,7 +687,7 @@
         font-size: 15px;
         display: block;
     }
-    
+
     #features .float-left {
         width: 62%;
     }
@@ -679,7 +700,7 @@
     #showcase {
         padding-bottom: 250px;
     }
-    
+
     #showcase .caption p {
         font-size: 10pt;
     }
@@ -759,12 +780,12 @@
         font-weight: 400;
         line-height: 30px;
     }
-    
+
     #footer-Content .copyright p {
-        color: rgb(200,200,200);
+        color: rgb(200, 200, 200);
         font-size: 8pt;
     }
-    
+
     .footer-logo {
         margin: 22pt 0pt;
     }
@@ -931,4 +952,3 @@
         left: 20%;
     }
 }
-
