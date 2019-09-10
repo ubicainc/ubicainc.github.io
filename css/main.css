@@ -625,9 +625,28 @@ button:focus {
    About Section 
    ========================================================================== */
 
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:0pt;
+	height:0;
+	overflow:hidden;
+    margin-bottom: 32pt;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+
 #about {
     background-color: rgb(250, 250, 250);
-    padding: 32pt 0pt 72pt 0pt;
+    padding: 0pt 0pt 72pt 0pt;
 }
 
 #about .business-item-info {
