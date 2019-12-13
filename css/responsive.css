@@ -461,6 +461,14 @@
         width: 30%;
         margin: 0pt auto;
     }
+    
+    .iphone8 {
+        margin-right: -72pt;
+    }
+    
+    #footer-content .col-lg {
+        margin-bottom: 20pt;
+    }
 }
 
 
