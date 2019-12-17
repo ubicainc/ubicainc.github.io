@@ -459,7 +459,7 @@ button:focus {
 .clear-overlay {
     position: absolute;
     width: 100%;
-    height: 250vh;
+    height: 100vh;
     top: 0px;
     left: 0px;
     background-color: rgba(30, 30, 30, .5);
@@ -899,7 +899,7 @@ background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
    Our Pricing 
    ========================================================================== */
 #pricing {
-    background-image: linear-gradient(rgb(13, 13, 13), rgb(0, 0, 0));
+    background-image: linear-gradient(rgb(13, 13, 13), rgb(10, 10, 10));
     background-position: center;
     padding: 52pt 0pt 72pt 0pt;
     min-height: 100vh;
@@ -968,7 +968,34 @@ background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+#pricing .left {
+    text-align: left !important;
+}
 
+.included {
+    margin: 72pt 0pt;
+}
+
+.included h3 {
+    font-size: 20pt;
+    margin: 32pt 0pt;
+    color: white;
+    font-weight: 400;
+}
+
+.included strong {
+    color: white;
+    font-size: 12pt;
+}
+
+.included p {
+    color: rgb(150, 150, 150);
+}
+
+.included i {
+    font-size: 32pt;
+    color: rgba(0, 122, 255, 1);
+}
 
 
 /* ==========================================================================
@@ -1095,8 +1122,8 @@ background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
    ========================================================================== */
 #footer-content {
     padding-top: 130px;
-    background-image: linear-gradient(rgba(17, 17, 17, 1), rgb(0,0,0));
-    background-color: rgb(17,17,17);
+    background-image: linear-gradient(rgba(10, 10, 10, 1), rgb(0,0,0));
+    background-color: rgb(0,0,0);
 }
 
 #footer-content .footer-logo {
