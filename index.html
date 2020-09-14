@@ -1,746 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required Meta tags -->
+    <title>EventSpase by Ubica</title>
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="EventSpase makes it easy to share and create events. Keep your groups up to date and connected."
+    />
+    <meta name="author" content="Ubiquitous Computing Applications Inc" />
 
-<head>
-  <!-- Required Meta tags -->
-  <title>Almanac by Ubica. - Experience Management and Event Creation </title>
-  <meta charset="utf-8">
-  <meta name="keywords"
-    content="Almanac, Ubica, Ubica Almanac, Event Management, Experience Management, CEM, Customer Experience, Event Management Software">
-  <meta name="viewport"
-    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="Almanac is the best software platform to manage the entire event experience. We handle event management and 
-  engagement analysis, hybrid advertising and event services for forward-thinking organizations.">
-  <meta name="author" content="Ubiquitous Computing Applications Inc">
+    <!--====== Favicon Icon ======-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./icons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
 
-  <!--====== Favicon Icon ======-->
-  <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
-  <link rel="manifest" href="./icons/site.webmanifest">
-  <link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
+    <!--  Essential META Tags -->
 
-  <!-- Facebook Meta -->
-  <meta property="og:url" content="http://almanac.ubicagroup.com/">
-  <meta property="og:type" content="product">
-  <meta property="og:site_name" content="Almanac - Experience Management">
-  <meta property="og:title" content="Manage Experiences. Not Events | Almanac">
-  <meta property="og:description"
-    content="Almanac is the best software platform to manage the entire event experience.">
-  <meta property="og:image" content="http://almanac.ubicagroup.com/img">
+    <meta property="og:title" content="EventSpase by Ubica" />
+    <meta
+      property="og:description"
+      content="EventSpase makes it easy to create and share events. Keep your groups up to date and connected."
+    />
+    <meta property="og:image" content="https://i.imgur.com/nZd65lJ.jpg" />
+    <meta property="og:url" content="http://ubica.io" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Twitter Meta -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="http://almanac.ubicagroup.com/">
-  <meta name="twitter:title" content="More than just events. Experiences. | Almanac">
-  <meta name="twitter:description"
-    content="Almanac is the best software platform to manage the entire event experience.">
-  <meta name="twitter:image" content="http://almanac.ubicagroup.com/img">
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:site_name" content="EventSpase by Ubica." />
+    <meta name="twitter:image:alt" content="People dancing in a quad." />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/main.css" type="text/css">
-  <link rel="stylesheet" href="css/responsive.css" type="text/css">
-  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="css/LineIcons.css" type="text/css">
-  <link rel="stylesheet" href="css/devices.min.css" type="text/css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!--<link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">-->
+    <link rel="stylesheet" type="text/css" href="./css/main.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
 
-</head>
-
-<body>
-
-  <!-- BACKGROUND VIDEO -->
-  <video autoplay muted loop class="video-background">
-    <source src="./video/intro.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-  </video>
-  <div class="clear-overlay"></div>
-
-  <!-- Header Section Start -->
-  <header id="home" class="hero-area">
-    <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
-      <div class="container">
-        <a href="index.html" class="navbar-brand">
-          <h1>Almanac</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="lni-menu"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto w-100 justify-content-end">
-            <!-- <li class="nav-item">
-              <a class="nav-link page-scroll" href="#about">About</a>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link page-scroll" href="#why-almanac">Why Almanac</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link page-scroll" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link page-scroll" href="#mobile">Mobile</a>
-            </li>
-            <!--<li class="nav-item">
-              <a class="nav-link page-scroll" href="#contact">Pricing</a>
-            </li>-->
-            <li class="nav-item">
-              <a class="nav-link page-scroll" href="#pricing">Get Started</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-signin" href="#">Sign In</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link page-scroll" href="https://google.com">Sign In</a>
-            </li> -->
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- HERO AREA -->
-    <div class="container">
-      <div class="row">
-        <div class="contents">
-          <h1>More than just events. Experiences</h1>
-          <h2>Almanac is the best software platform to manage the entire event experience. We handle event management
-            &amp; engagement analysis, hybrid advertising and event services for forward-thinking organizations.</h2>
-
-          <a href="./views/contact/contact.html" rel="nofollow" target="_blank" class="btn hero-button">Contact
-            Sales</a>
-          <!--<a href="https://rebrand.ly/slick-ud" rel="nofollow" target="_blank" class="btn btn-border page-scroll">Learn More</a>-->
-
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-  <!-- ABOUT -->
-  <!-- <section id="about" class="section">
-    <div class="video-container">
-      <iframe width="" height="" src="https://www.youtube.com/embed/o3IDlqEmK-o" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </section> -->
-
-
-  <!-- WHY ALMANAC -->
-  <section id="why-almanac" class="section">
-    <div class="image-container">
-      <h2 class="section-title">Rethink the Event Experience</h2>
-      <div class="desc-text">
-        <p>Almanac is the complete toolkit to manage, showcase and enhance event experiences</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- DESCRIPTION -->
-  <section id="why-almanacInfo">
-    <div class="container">
-      <div class="row">
-        <!-- Start Col -->
-        <img src="./img/hero.png" alt="Screenshot of Almanac's Analytics features." title="Analytics on Almanac."/>
-        <div class="business-item-info">
-          <h3>Administrators First</h3>
-          <br />
-          <p>We believe that poor event experiences are a problem rooted in information, not effort. The power to
-            create and unlock unparalleled event experiences lies in the hands of the people who know the audience
-            best - the hosts (administrators). With this we obsessively process insightful, robust event and audience
-            data that empower administrators to make effective business decisions. Because we eliminate needless
-            complexity and extraneous details, you can get up and running with Almanac in just a couple of minutes.
-            <br />
-            <br />
-            We enable administrators to turn events into memorable experiences.
-
-            <br />
-            <br />
-          </p>
-        </div>
-        <section id="services" class="section">
-          <div class="container">
-            <div class="row">
-              <!-- Start Col -->
-              <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="services-item text-center">
-                  <div class="icon">
-                    <i class="lni-users"></i>
-                  </div>
-                  <h4>Reach Diverse Communities</h4>
-                  <p>Event participation is centered around personal interests and diverse social networks. Know your
-                    audience.</p>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="services-item text-center">
-                  <div class="icon">
-                    <i class="lni-seo-monitoring"></i>
-                  </div>
-                  <h4>Gain Valuable Insights</h4>
-                  <p>Our analytics dashboard allows you to gauge event interest and key user engagement trends.</p>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="services-item text-center">
-                  <div class="icon">
-                    <i class="lni-brush"></i>
-                  </div>
-                  <h4>Advertise Efficiently</h4>
-                  <p>Through the use of NHA, target your audience in both physical and digital formats with ease.</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
-      </div>
+  <body>
+    <div class="hero">
+      <h1>
+        EventSpase
+      </h1>
+        <h2>
+          A single home for all your events
+        </h2>
     </div>
 
-  </section>
-
-  <!-- FEATURES -->
-  <section id="features" class="section">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="features-text section-header text-center">
-            <div class="features-text-wrapper">
-              <h1 class="section-title">Always Improving</h1>
-              <div class="desc-text">
-                <p>Almanac is an always-improving platform that gains new features every month. Our world-class
-                  engineering team constantly iterates upon every facet of the Almanac stack. Therefore, building on
-                  Almanac means you get early access to the latest technologies.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div style="width: 100%; margin-left: 50px; margin-bottom: 52pt">
-          <div class="marvel-device macbook">
-            <div class="top-bar"></div>
-            <div class="camera"></div>
-            <div class="screen">
-              <!-- Add Content Here; just replace -->
-              <img src="./img/create-preview.png" style="height: 100%; margin-left: -120pt" alt="Screenshot of the event creation panel on Almanac." title="Creating Events on Almanac." />
-            </div>
-            <div class="bottom-bar"></div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- ADDITIONAL FEATURE TILES -->
-        
-    <div data-aos="fade-up">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-xs-12 p-0">
-
-              <div class="feature-item featured-border1">
-                <div class="feature-icon float-left">
-                  <i class="lni-cloud-upload"></i>
-                </div>
-                <div class="feature-info float-left">
-                  <h4>Multiple Event Upload</h4>
-                  <p>Create multiple events with ease.
-                    <br> Upload over 100+ events at once.<br></p>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-lg-6 col-md-6 col-xs-12 p-0">
-              <div class="feature-item featured-border2">
-                <div class="feature-icon float-left">
-                  <i class="lni-mobile"></i>
-                </div>
-                <div class="feature-info float-left">
-                  <h4>Live Preview</h4>
-                  <p>View what your event will look like in real time. See what your audience will see with pixel-perfect
-                    precision.<br></p>
-                </div>
-              </div>
-            </div>
-
-
-        <div class="col-lg-6 col-md-6 col-xs-12 p-0">
-
-          <div class="feature-item featured-border1">
-            <div class="feature-icon float-left">
-              <i class="lni-stats-up"></i>
-            </div>
-            <div class="feature-info float-left">
-              <h4>Advanced Analytics Tools</h4>
-              <p>
-                <!--You can touch your data.-->
-                Gain unprecedented access to your event data, so you can make smarter decisions and learn more about
-                your target audience.</p>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="col-lg-6 col-md-6 col-xs-12 p-0">
-
-          <div class="feature-item featured-border2">
-            <div class="feature-icon float-left">
-              <i class="lni-invention"></i>
-            </div>
-            <div class="feature-info float-left">
-              <h4>Key Insights</h4>
-              <p>Derive key insights in plain English.<br>No technical jargon, just the facts.</p>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="col-lg-6 col-md-6 col-xs-12 p-0">
-
-          <div class="feature-item featured-border3">
-            <div class="feature-icon float-left">
-              <i class="lni-library"></i>
-            </div>
-            <div class="feature-info float-left">
-              <h4>Add Maps &amp; Resources</h4>
-              <p>Quickly upload General Safety information and maps specific to your organization.</p>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="col-lg-6 col-md-6 col-xs-12 p-0">
-
-          <div class="feature-item">
-            <div class="feature-icon float-left">
-              <i class="lni-island"></i>
-            </div>
-            <div class="feature-info float-left">
-              <h4>Premier Editing</h4>
-              <p>Make changes with confidence.<br> For those last minute edits, our management tools allow you to push
-                event data instantly.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
+    <div class="content">
+      <p>
+        Informing and updating people about an event across different
+        channels is difficult and time-consuming. Sharing events is an
+        upstream battle for attention. We were tired of constant
+        reposting, food pics, and CandyCrush invites; so we built
+        EventSpase.
+        <br />
+        <br />
+        With <strong> EventSpase,</strong> we provide a forum for people
+        to create and share event information, quickly and easily. It's
+        a <strong>space</strong> where events can exist without all that
+        other noise. Best of all,
+        <br />
+        <br />
+        It just works. Coming Fall 2020.
+      </p>
     </div>
 
-      <div class="row">
-        <h3>And many more...</h3>
-      </div>
-    </div>
-  </section>
-
-  <section id="mobile" class="section">
-    <div class="container">
-      <div class="row">
-        <!-- Start Col -->
-        <div class="col-lg-6 col-md-12 pl-0 pt-70 pr-5">
-          <div id="iphoneContainer">
-            <div class="marvel-device iphone8 black">
-              <div class="top-bar"></div>
-              <div class="sleep"></div>
-              <div class="volume"></div>
-              <div class="camera"></div>
-              <div class="sensor"></div>
-              <div class="speaker"></div>
-              <div class="screen">
-                <video src="./video/UbicaDemo.mp4" loop autoplay="true" muted="" style="width: 100%;">
-                </video>
-              </div>
-              <div class="home"></div>
-              <div class="bottom-bar"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- DESCRIPTION -->
-        <div class="col-lg-6 col-md-12 pl-4">
-          <div class="business-item-info">
-            <h3>Mobile Ready</h3>
-            <br />
-            <p>For your users, our flagship app offers an eganging new way to explore your events. Calendars, bookmarking, and one-click ride hailing, are all easier to use than ever. We've also built in peace of mind with Mayday&trade;; our Safety and Well-being system which allows your audience to quickly write reports and get a hold of administrators in times of distress. 
-                
-              <br />
-              <br />
-              Simply put; it's all your events in the palm of your hand.
-              <br />
-              <br />
-            </p>
-              
-            <div class="app-links">
-              <a href="https://itunes.apple.com/us/app/ubica/id1450234514?ls=1&mt=8">
-              <img style="height: 44pt;" src="img/iOS-dl.svg" alt="Available on the App Store button." title="Download on the App Store."/>
-            </a>
-            <a
-              href='https://play.google.com/store/apps/details?id=com.ubica.almanac&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
-                alt='Get it on Google Play' style="height: 62pt;"
-                src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' />
-            </a>
-            </div>
-            <!--<a class="btn btn-common" href="#">download</a>-->
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- PRICING PLANS -->
-  <!--<section id="pricing" class="section">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="pricing-text section-header text-center">
-            <div>
-              <h2 class="section-title">Pricing Plans</h2>
-              <div class="desc-text">
-                <p>Find a plan that works for your organization's needs.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row pricing-tables">
-
-        <div class="col-lg-4 col-md-4 col-xs-12">
-          <div class="pricing-table text-center">
-            <div class="pricing-details">
-              <h3>Demo</h3>
-              <ul>
-                <li>Free Installation</li>
-                <li>Ubica Mobile App Lite</li>
-                <li>Limited Data Access</li>
-                <li>Core Features</li>
-                <li>2 Day Trial</li>
-              </ul>
-            </div>
-            <div class="plan-button">
-              <a href="./views/contact/contact.html" class="btn btn-border">Try Demo</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-xs-12">
-          <div class="pricing-table text-center">
-            <div class="pricing-details">
-              <h3>Standard</h3>
-
-              <ul>
-                <li>Free Installation</li>
-                <li>Ubica Mobile App</li>
-                <li>Full Data Management</li>
-                <li>Core Features</li>
-                <li>Basic Analytics</li>
-                <li>Next Day Support</li>
-                <li>Billed Annually</li>
-              </ul>
-            </div>
-            <div class="plan-button">
-              <a href="./views/contact/contact.html" class="btn btn-common">Contact Sales</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-xs-12">
-          <div class="pricing-table text-center">
-            <div class="pricing-details">
-              <h3>Pro</h3>
-
-              <ul>
-                <li>Free Installation</li>
-                <li>Ubica Mobile App</li>
-                <li>Full Data Management</li>
-                <li>Core Features</li>
-                <li>Advanced Analytics</li>
-                <li>Premium Support</li>
-                <li>Manage over 2000+ Users</li>
-                <li>Create Groups</li>
-                <li>Billed Annually</li>
-              </ul>
-            </div>
-            <div class="plan-button">
-              <a href="./views/contact/contact.html" class="btn btn-border">Contact Sales</a>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-    </div>
-  </section>-->
-    
-    
-    
-    <section id="pricing" class="section">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="pricing-text section-header text-center">
-            <div>
-              <h2 class="section-title">Get Started</h2>
-              <div class="desc-text">
-                <p>No two experiences are the same. We'll help you build a package that works for your organization.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row pricing-tables">
-
-        <div class="col-lg-4 col-md-4 col-xs">
-          <div class="pricing-table text-center">
-            <div class="pricing-details">
-              <h3>Standard</h3>
-
-              <ul>
-                <li>Ubica, Core Analytics, and everything else you need to get started.</li>
-              </ul>
-            </div>
-            <div class="plan-button">
-              <a href="./views/contact/contact.html" class="btn btn-common">Contact Sales</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-8 col-md-4 col-xs-12">
-          <div class="pricing-table text-center">
-            <div class="pricing-details">
-              <h3>Customized</h3>
-
-              <ul>
-                <li class="left">Design a custom package for your organization. We'll work closely with you to deliver a scalable system that meets even the toughest demands. Flexbile upgrades make it easier than ever to pick and choose what works best for your organization.</li>
-              </ul>
-            </div>
-            <div class="plan-button">
-              <a href="./views/contact/contact.html" class="btn btn-border">Contact Sales</a>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-    </div>
-        <div data-aos="fade-up">
-            <div class="container included">
-            <h3>What's Included</h3>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                  <div class="l-feature">
-                    <i class="lni-laptop-phone"></i>
-                    <p class="t-cl--light-purple-100 t-fs--small t-ln--large"><strong class="t-cl--white-100 t-fw--bold">Ubica Mobile App</strong>. Access to our flahship product. Share Almanacs with your audience and upload your events for instant viewing.</p>
-                  </div>
-                </div>
-
-
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                  <div class="l-feature">
-                    <i class="lni-flag"></i>
-                    <p class="t-cl--light-purple-100 t-fs--small t-ln--large"><strong class="t-cl--white-100 t-fw--bold">Mayday&trade;</strong>. Peace of mind, built-in with every event. Submit reports and contact emergency services in seconds.</p>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                  <div class="l-feature">
-                    <i class="lni-protection"></i>
-                    <p class="t-cl--light-purple-100 t-fs--small t-ln--large"><strong class="t-cl--white-100 t-fw--bold">WatchTower&trade;</strong>. Monitor reports and address ongoing issues with ease. Get exact locations and time stamps of reports. </p>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                  <div class="l-feature">
-                    <i class="lni-seo-monitoring"></i>
-                    <p class="t-cl--light-purple-100 t-fs--small t-ln--large"><strong class="t-cl--white-100 t-fw--bold">Core Analytics</strong>. All the event data at your fingertips. View key event insights and make informed decisions for future events.</p>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                  <div class="l-feature">
-                    <i class="lni-brick"></i>
-                    <p class="t-cl--light-purple-100 t-fs--small t-ln--large"><strong class="t-cl--white-100 t-fw--bold">Flexible Upgrades</strong>. Increase audience count or upgrade specific features as the needs of your organization grow.</p>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                  <div class="l-feature">
-                    <i class="lni-cloud-upload"></i>
-                    <p class="t-cl--light-purple-100 t-fs--small t-ln--large"><strong class="t-cl--white-100 t-fw--bold">Unlimited Resource Uploads</strong>. Upload maps, meal times, or anything else specific to your organization, for all your audience to see.</p>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                  <div class="l-feature">
-                    <i class="lni-hand"></i>
-                    <p class="t-cl--light-purple-100 t-fs--small t-ln--large"><strong class="t-cl--white-100 t-fw--bold">Next Day Support</strong>. We're here to help. We can help resolve most issues within a days notice.</p>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                  <div class="l-feature">
-                    <i class="lni-invention"></i>
-                    <p class="t-cl--light-purple-100 t-fs--small t-ln--large"><strong class="t-cl--white-100 t-fw--bold">Free Installation</strong>. We'll help your organization hit the ground running setting up mobile and desktop apps.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-  </section>
-
-
-  <!-- CONTACT -->
-  <!--<section id="contact" class="section">
-    <div class="clear-overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="contact-text section-header text-center">
-            <div>
-              <h2 class="section-title">Get Started</h2>
-              <div class="desc-text">
-                <p>We want to hear from you.</p>
-                <p>eiusmod tempor incididunt ut labore et dolore.</p>
-              </div>
-
-              <a href="./views/contact/contact.html">
-                <div class="sales-btn">
-                  <p>Contact Sales</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>-->
-
-  <!-- FOOTER -->
-  <footer>
-    <section id="footer-content">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg col-md-6 col-sm-6 col-xs-6 col-mb-12">
-
-            <div class="footer-logo">
-              <h1>Ubica</h1>
-              <p>More than just events. Experiences.</p>
-            </div>
-          </div>
-
-          <div class="col-lg col-md-6 col-sm-6 col-xs-6 col-mb-12">
-            <div class="widget">
-              <h3 class="block-title">COMPANY</h3>
-              <ul class="menu">
-                <li><a href="#">About Us</a><img src="./img/icons/arrow.svg" /></li>
-                <li><a href="#">Career</a><img src="./img/icons/arrow.svg" /></li>
-                <li><a href="#">Press</a><img src="./img/icons/arrow.svg" /></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg col-md-6 col-sm-6 col-xs-6 col-mb-12">
-            <div class="widget">
-              <h3 class="block-title">PRODUCT</h3>
-              <ul class="menu">
-                <li><a href="#">Customer Service</a><img src="./img/icons/arrow.svg" /></li>
-                <li><a href="#">Enterprise</a><img src="./img/icons/arrow.svg" /></li>
-                <li><a href="#">Price</a><img src="./img/icons/arrow.svg" /></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg col-md-6 col-sm-6 col-xs-6 col-mb-12">
-            <div class="widget">
-              <h3 class="block-title">DOWNLOAD</h3>
-              <ul class="menu">
-                <li><a href="#">iOS</a><img src="./img/icons/arrow.svg" /></li>
-                <li><a href="#">Android</a><img src="./img/icons/arrow.svg" /></li>
-                <li><a href="#">Terminal Software</a><img src="./img/icons/arrow.svg" /></li>
-              </ul>
-            </div>
-          </div>
-
-          <!--<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-              <div class="widget">
-                <h3 class="block-title">SUPPORT</h3>
-                <p>Contact Sale</p>
-              </div>
-            </div>-->
-        </div>
-      </div>
-
-      <div class="copyright">
-        <div class="container">
-          <!-- Star Row -->
-          <div class="row">
-            <div class="col-md-12">
-              <div class="site-info text-center">
-                <p>Copyright 2019 &copy; Ubiquitous Computing Applications Inc. — All Rights Reserved.</p>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-  </footer>
-
-
-  <!-- BACK TO TOP -->
-  <a href="#" class="back-to-top">
-    Back to Top
-    <i class="lni-chevron-up"></i>
-  </a>
-
-  <!-- Preloader -->
-  <div id="preloader">
-    <div class="loader" id="loader-1"></div>
-  </div>
-  <!-- End Preloader -->
-
-  <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="js/jquery-min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.js"></script>
-    
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <script>
-        AOS.init();
-    </script>
-
-  <!--Navigation-->
-  <script src="js/jquery.nav.js"></script>
-  <script src="js/scrolling-nav.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-
-
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <!--<script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>-->
-  <script src="js/main.js"></script>
-
-</body>
-
-
-
+    <!-- FOOTER -->
+    <footer class="footer">
+      Copyright © 2020 Ubiquitous Computing Applications Inc.
+    </footer>
+  </body>
 </html>
